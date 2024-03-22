@@ -1,8 +1,22 @@
 import pandas as pd
 import time
 
-path_csv = r'\\192.168.1.98\04 inside_doc\04 Выборки данных\paths_db.csv'
+path_csv = r'\\192.168.1.98\04 inside_doc\04 Выборки данных\dir_vessels_db.csv'
 
+
+# class MainWindow(QtWidgets.QWidget):
+#     def __init__(self):
+#         super().__init__()
+# 
+#         self.dir = None
+#         self.textEdit = QtWidgets.QTextEdit()
+#         self.listWidget = QtWidgets.QListWidget()
+# 
+#         vbox = QVBoxLayout(self)
+#         vbox.addWidget(self.textEdit)
+#         vbox.addWidget(self.listWidget)
+# 
+#         self.select_ws()
 
 # Функция - декоратор
 def timer(func):
@@ -50,13 +64,21 @@ def user_input_handler(data):
 
 
 if __name__ == '__main__':
+    user_data = input('Введите название судна / папки:\n')
     @timer
     def search_path():
-        user_data = input('Введите название судна / папки:\n')
         name_folder = user_input_handler(user_data)
         data = read_csv(path_csv)
         sort_csv(data, name_folder)
 
     search_path()
+
+
+# if __name__ == '__main__':
+#     app = QtWidgets.QApplication(sys.argv)
+#     w = MainWindow()
+#     w.show()
+#     sys.exit(app.exec())
+
 
 # TODO Прикрутить PyQt6

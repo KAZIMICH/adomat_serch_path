@@ -37,6 +37,9 @@
     <height>800</height>
    </size>
   </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
   <property name="windowTitle">
    <string>ПОИСК СУДНА</string>
   </property>
@@ -46,82 +49,195 @@
   <property name="styleSheet">
    <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255))</string>
   </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="description">
+   <widget class="QPushButton" name="refresh_data">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>461</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="change_button">
-    <property name="geometry">
-     <rect>
-      <x>850</x>
-      <y>10</y>
-      <width>141</width>
+      <x>820</x>
+      <y>20</y>
+      <width>171</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial Narrow</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 12pt;
+background-color:rgb(255, 126, 87);
+border: 3px solid rgba(255,255,255,40);
+border-radius: 10px;</string>
+    </property>
     <property name="text">
-     <string>Выбери папку поиска</string>
+     <string>ОБНОВИТЬ 
+ДАННЫЕ В БАЗЕ</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="serch_button">
+   <widget class="QLabel" name="time_save">
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>80</y>
-      <width>141</width>
+      <x>590</x>
+      <y>20</y>
+      <width>221</width>
       <height>61</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-family: arial narrow;
+font-size: 11pt;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дата обновления файла:&lt;/p&gt;&lt;p&gt;хх&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seech_button">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>110</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 12pt;
+background-color:rgb(255, 126, 87);
+border: 3px solid rgba(255,255,255,40);
+border-radius: 10px;</string>
+    </property>
     <property name="text">
      <string>ИСКАТЬ</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res-rc.qrc">
+      <normaloff>:/icon/icons/search_FILL0_wght400_GRAD0_opsz40.svg</normaloff>:/icon/icons/search_FILL0_wght400_GRAD0_opsz40.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_folder">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 12pt;
+background-color:rgb(255, 126, 87);
+border: 3px solid rgba(255,255,255,40);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>ИЗМЕНИТЬ</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res-rc.qrc">
+      <normaloff>:/icon/icons/folder_FILL0_wght400_GRAD0_opsz40.svg</normaloff>:/icon/icons/folder_FILL0_wght400_GRAD0_opsz40.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="find_folder">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>80</y>
-      <width>291</width>
-      <height>61</height>
+      <x>20</x>
+      <y>110</y>
+      <width>311</width>
+      <height>62</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-family: arial narrow;
+font-size: 11pt;</string>
+    </property>
     <property name="text">
-     <string>Какую папку искать?</string>
+     <string>Какую папку (судно) искать?</string>
     </property>
    </widget>
    <widget class="QLabel" name="target_path_text">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>10</y>
-      <width>291</width>
-      <height>61</height>
+      <x>20</x>
+      <y>20</y>
+      <width>311</width>
+      <height>62</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white;</string>
+     <string notr="true">background-color: white;
+font-family: arial narrow;
+font-size: 11pt;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Папка поиска по умолчанию:&lt;/p&gt;&lt;p&gt;(выбрана - пароходы и чертежи)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Папка поиска по умолчанию:&lt;/p&gt;&lt;p&gt;&amp;quot;03_пароходы_чертежи&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>981</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res-rc.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -57,6 +57,8 @@ def sort_csv(data, target):
     return data
 
 # TODO: добавить логику если нет такой папки
+# если существует хотя бы один путь, показать его.
+# если нет, то вывести окно с сообщением
 
 
 # Обработчик пользовательского ввода
@@ -89,3 +91,13 @@ if __name__ == '__main__':
 
 
 # TODO Прикрутить PyQt6
+
+# дата и время создания файла:
+# import os
+# from datetime import datetime
+#
+# filename = "test.txt"
+# stat = os.stat(filename)
+# ctime = stat.st_ctime
+# ctime_readable = datetime.fromtimestamp(ctime)
+# print(ctime_readable)

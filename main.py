@@ -1,8 +1,9 @@
 import pandas as pd
 import time
+from ui_QTD6 import Ui_MainWindow
+
 
 path_csv = r'\\192.168.1.98\04 inside_doc\04 Выборки данных\dir_vessels_db.csv'
-
 
 # class MainWindow(QtWidgets.QWidget):
 #     def __init__(self):
@@ -37,10 +38,10 @@ def timer(func):
 
 
 # Сохраняем файл csv
-def save_csv(path, data):
-    df = pd.DataFrame(data, columns=['path'])
-    df = df['path'].str.lower()
-    df.to_csv(path, index=False)
+# def save_csv(path, data):
+#     df = pd.DataFrame(data, columns=['path'])
+#     df = df['path'].str.lower()
+#     df.to_csv(path, index=False)
 
 
 # 3. Читаем файл csv
@@ -52,14 +53,20 @@ def read_csv(path):
 # 4. Сортируем пути по условию и сохраняем во временный файл
 def sort_csv(data, target):
     data = data[data['path'].str.contains(target)]
-    save_csv('result.csv', data)
+    # save_csv('result.csv', data)
+    return data
+
+# TODO: добавить логику если нет такой папки
 
 
 # Обработчик пользовательского ввода
 def user_input_handler(data):
+    last_req = []
     while '  ' in data:
         data = data.replace('  ', ' ')
     data = data.strip().lower()
+    last_req.append(data)  # список с последними запросами
+    save_csv('temp_csv', last_req)  # сохраняем список в файл
     return data
 
 

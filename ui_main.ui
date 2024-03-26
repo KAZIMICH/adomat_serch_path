@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>100</horstretch>
+    <verstretch>80</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1002</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ПОИСК СУДНА</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255))</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_refresh_data">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>30</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:10px;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>ОБНОВИТЬ 
+ДАННЫЕ В БАЗЕ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_time_save">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дата обновления файла:&lt;/p&gt;&lt;p&gt;хх&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_search_folder">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>140</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 2px solid rgba(255,255,255,60);
+     border-radius:10px;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>ИСКАТЬ</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_target_path">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Папка по умолчанию: &amp;quot;03_пароходы_чертежи&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>981</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_last_query">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>140</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: bold;
+font-size: 9pt;
+background-color: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string>Последние запросы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_last_req">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>140</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 1px solid rgba(255,255,255,40);
+     border-radius:10px;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+    </property>
+    <property name="text">
+     <string>ОТКРЫТЬ</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res-rc.qrc">
+      <normaloff>:/icon/icons/search_FILL0_wght400_GRAD0_opsz40.svg</normaloff>:/icon/icons/search_FILL0_wght400_GRAD0_opsz40.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_folder">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>321</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+font-size: 16pt;
+color: white;
+}
+
+QComboBox:item {
+    color: black;
+}</string>
+    </property>
+    <property name="placeholderText" stdset="0">
+     <string>Choose status</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>03_пароходы_чертежи</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>02 Library</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDateTimeEdit" name="dt_time_save">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>60</y>
+      <width>194</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_target">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20pt;
+color: white;
+padding-left: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Что ищем?</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

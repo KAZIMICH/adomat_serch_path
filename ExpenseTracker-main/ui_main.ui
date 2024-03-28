@@ -68,6 +68,7 @@ border-radius: 7px;</string>
             <font>
              <family>Noto Sans SC</family>
              <pointsize>20</pointsize>
+             <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
@@ -89,6 +90,7 @@ border: none;</string>
             <font>
              <family>Noto Sans SC</family>
              <pointsize>30</pointsize>
+             <weight>50</weight>
              <italic>false</italic>
              <bold>false</bold>
              <kerning>true</kerning>
@@ -122,6 +124,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -137,7 +140,7 @@ padding-top: 10px;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/north_west_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/north_west_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -147,6 +150,7 @@ padding-top: 10px;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -171,6 +175,7 @@ padding-top: 10px;</string>
             <font>
              <family>Noto Sans SC</family>
              <pointsize>20</pointsize>
+             <weight>50</weight>
              <italic>false</italic>
              <bold>false</bold>
              <kerning>true</kerning>
@@ -204,6 +209,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -219,7 +225,7 @@ padding-top: 10px;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/call_received_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/call_received_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -229,6 +235,7 @@ padding-top: 10px;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -253,6 +260,7 @@ padding-top: 10px;</string>
             <font>
              <family>Noto Sans SC</family>
              <pointsize>20</pointsize>
+             <weight>50</weight>
              <italic>false</italic>
              <bold>false</bold>
              <kerning>true</kerning>
@@ -310,6 +318,7 @@ border-radius: 7px;</string>
             <font>
              <family>Noto Sans SC</family>
              <pointsize>20</pointsize>
+             <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
@@ -345,6 +354,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -359,7 +369,7 @@ border: none;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/local_grocery_store_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/local_grocery_store_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -369,6 +379,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -390,6 +401,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>50</weight>
                <italic>false</italic>
                <bold>false</bold>
                <kerning>true</kerning>
@@ -425,6 +437,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -439,7 +452,7 @@ border: none;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/sports_esports_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/sports_esports_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -449,6 +462,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -470,6 +484,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>50</weight>
                <italic>false</italic>
                <bold>false</bold>
                <kerning>true</kerning>
@@ -505,6 +520,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -519,7 +535,7 @@ border: none;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/directions_car_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/directions_car_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -529,6 +545,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -550,6 +567,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>50</weight>
                <italic>false</italic>
                <bold>false</bold>
                <kerning>true</kerning>
@@ -585,6 +603,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -599,7 +618,7 @@ border: none;</string>
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="res-rs.qrc">:/icons/icons/list_white_24dp.svg</pixmap>
+              <pixmap>:/icons/icons/list_white_24dp.svg</pixmap>
              </property>
             </widget>
            </item>
@@ -609,6 +628,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -630,6 +650,7 @@ border: none;</string>
               <font>
                <family>Noto Sans SC</family>
                <pointsize>16</pointsize>
+               <weight>50</weight>
                <italic>false</italic>
                <bold>false</bold>
                <kerning>true</kerning>
@@ -663,7 +684,7 @@ border: none;</string>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <property name="spacing">
-        <number>-1</number>
+        <number>6</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
@@ -688,6 +709,7 @@ border: none;</string>
          <property name="font">
           <font>
            <family>Noto Sans SC</family>
+           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -711,7 +733,7 @@ background-color:rgba(255,255,255,70);
           <string>New transaction</string>
          </property>
          <property name="icon">
-          <iconset resource="res-rs.qrc">
+          <iconset>
            <normaloff>:/icons/icons/post_add_white_24dp.svg</normaloff>:/icons/icons/post_add_white_24dp.svg</iconset>
          </property>
          <property name="iconSize">
@@ -733,6 +755,7 @@ background-color:rgba(255,255,255,70);
          <property name="font">
           <font>
            <family>Noto Sans SC</family>
+           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -756,7 +779,7 @@ background-color:rgba(255,255,255,70);
           <string>Delete transaction</string>
          </property>
          <property name="icon">
-          <iconset resource="res-rs.qrc">
+          <iconset>
            <normaloff>:/icons/icons/delete_white_24dp.svg</normaloff>:/icons/icons/delete_white_24dp.svg</iconset>
          </property>
          <property name="iconSize">
@@ -778,6 +801,7 @@ background-color:rgba(255,255,255,70);
          <property name="font">
           <font>
            <family>Noto Sans SC</family>
+           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -801,7 +825,7 @@ background-color:rgba(255,255,255,70);
           <string>Edit transaction</string>
          </property>
          <property name="icon">
-          <iconset resource="res-rs.qrc">
+          <iconset>
            <normaloff>:/icons/icons/edit_white_24dp.svg</normaloff>:/icons/icons/edit_white_24dp.svg</iconset>
          </property>
          <property name="iconSize">

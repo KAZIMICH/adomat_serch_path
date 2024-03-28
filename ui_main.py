@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QDateTimeEdit, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QWidget)
+    QLineEdit, QListWidget, QListWidgetItem, QMainWindow,
+    QPushButton, QSizePolicy, QWidget)
 import res_rc
 
 class Ui_MainWindow(object):
@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         self.lbl_target_path.setMargin(5)
         self.lbl_result = QLabel(self.centralwidget)
         self.lbl_result.setObjectName(u"lbl_result")
-        self.lbl_result.setGeometry(QRect(10, 250, 981, 541))
+        self.lbl_result.setGeometry(QRect(10, 580, 981, 211))
         self.lbl_result.setFont(font)
         self.lbl_last_query = QLabel(self.centralwidget)
         self.lbl_last_query.setObjectName(u"lbl_last_query")
@@ -158,6 +158,9 @@ class Ui_MainWindow(object):
         self.le_target.setStyleSheet(u"font-size: 20pt;\n"
 "color: white;\n"
 "padding-left: 10px;")
+        self.lst_result = QListWidget(self.centralwidget)
+        self.lst_result.setObjectName(u"lst_result")
+        self.lst_result.setGeometry(QRect(50, 240, 911, 291))
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)

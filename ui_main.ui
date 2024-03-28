@@ -193,9 +193,9 @@ border: none;</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>250</y>
+      <y>580</y>
       <width>981</width>
-      <height>541</height>
+      <height>211</height>
      </rect>
     </property>
     <property name="font">
@@ -335,6 +335,16 @@ padding-left: 10px;</string>
     </property>
     <property name="placeholderText">
      <string>Что ищем?</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="lst_result">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>911</width>
+      <height>291</height>
+     </rect>
     </property>
    </widget>
   </widget>

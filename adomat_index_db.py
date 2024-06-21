@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 folder = r'\\192.168.1.98\03_пароходы_чертежи'
-path_db = r'\\192.168.1.98\04 inside_doc\04 Выборки данных'
+path_db = r'\\192.168.1.98\04 inside_doc\04 DB\02 paths'
 name_csv = 'dir_vessels_db.csv'
 
 
